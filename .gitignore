@@ -37,7 +37,7 @@ logs
 **/*.backup.*
 **/*.back.*
 
-node_modules
+node_modules/
 bower_components
 
 *.sublime*
@@ -80,7 +80,7 @@ pids
 lib-cov
 
 # Coverage directory used by tools like istanbul
-coverage
+coverage/
 *.lcov
 
 # nyc test coverage
@@ -134,12 +134,12 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
-.env
+.env/
 .env.test
 .env*.local
 
 # parcel-bundler cache (https://parceljs.org/)
-.cache
+.cache/
 .parcel-cache
 
 # Next.js build output
@@ -147,7 +147,7 @@ typings/
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+dist/
 
 # Gatsby files
 .cache/
