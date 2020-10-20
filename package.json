@@ -1,0 +1,29 @@
+{
+  "name": "adopt-me-npm",
+  "version": "1.0.0",
+  "description": "A React adoption website using both vanilla JS and NPM",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier \"src/**/*.{js,html}\" --write",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottkatzelnick/adopt-me-project.git"
+  },
+  "keywords": [
+    "React"
+  ],
+  "author": "Scott Katzelnick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scottkatzelnick/adopt-me-project/issues"
+  },
+  "homepage": "https://github.com/scottkatzelnick/adopt-me-project#readme",
+  "devDependencies": {
+    "eslint": "^7.11.0",
+    "eslint-config-prettier": "^6.13.0",
+    "prettier": "^2.1.2"
+  }
+}
