@@ -1,8 +1,14 @@
-from React, {useState} import './react'
-from @frontendmasters import './react-v5'
+import React from 'react';
+import { render } from 'react-dom';
+import SearchParams from './SearchParams';
 
 const App = () => {
-	return <div></div>;
+	return (
+		<div>
+			<h1>Adopt Me!</h1>
+			<SearchParams />
+		</div>
+	);
 };
 
 render(<App />, document.getElementById('root'));

@@ -53,7 +53,7 @@ pids
 lib-cov
 
 # Coverage directory used by tools like istanbul
-coverage
+coverage/
 *.lcov
 
 # nyc test coverage
@@ -116,7 +116,7 @@ typings/
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+dist/
 
 # Gatsby files
 .cache/
@@ -147,7 +147,7 @@ dist
 **/*.backup.*
 **/*.back.*
 
-node_modules
+node_modules/
 
 *.sublime*
 
