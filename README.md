@@ -1,4 +1,4 @@
-# Adopt-Me Project
+# Adopt-Me! Project
 
 ## Introduction
 
@@ -14,7 +14,7 @@ The Adopt-Me website was created using React, vanilla JavaScript, JSX, Babel and
 
 <br>
 
- [Adopt-Me Project](#adopt-me-project)<br>
+ [Adopt-Me! Project](#adopt-me-project)<br>
 
   I. [Introduction](#introduction)<br>
 
