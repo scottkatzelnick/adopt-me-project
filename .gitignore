@@ -113,7 +113,6 @@ typings/
 
 # Optional eslint cache
 .eslintcache
-.eslintrc.json
 
 # Optional prettier config
 .prettierrc
