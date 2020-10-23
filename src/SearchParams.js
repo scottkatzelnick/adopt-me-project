@@ -3,13 +3,16 @@ import pet, { ANIMALS } from '@frontendmasters/pet';
 import Results from './Results';
 import useDropdown from './useDropdown';
 
+//=> Functional component used to search for animals
 const SearchParams = () => {
+	//=> Using hooks to connect with API
 	const [location, setLocation] = useState('Seattle, WA');
 	const [breeds, setBreeds] = useState([]);
 	const [animal, AnimalDropdown] = useDropdown('Animal', 'dog', ANIMALS);
 	const [breed, BreedDropdown, setBreed] = useDropdown('Breed', '', breeds);
 	const [pets, setPets] = useState([]);
 
+	//=> Function called on form onSubmit()
 	async function requestPets() {
 		const { animals } = await pet.animals({
 			location,
@@ -20,6 +23,7 @@ const SearchParams = () => {
 		setPets(animals || []);
 	}
 
+	//=> Ties location, animal type and breed dropdows together
 	useEffect(() => {
 		setBreeds([]);
 		setBreed('');
@@ -30,6 +34,7 @@ const SearchParams = () => {
 		}, console.error);
 	}, [animal, setBreed, setBreeds]);
 
+	//=> Renders form and results when searched
 	return (
 		<div className="search-params">
 			<form

@@ -1,6 +1,7 @@
 import React from 'react';
 import Pet from './Pet';
 
+//=> Functional component making the API call to set values of variables used in Pet component
 const Results = ({ pets }) => {
 	return (
 		<div className="search">
@@ -8,6 +9,7 @@ const Results = ({ pets }) => {
 				<h1>No Pets Found</h1>
 			) : (
 				pets.map((pet) => (
+					//=> Pet component pulls in API values
 					<Pet
 						animal={pet.type}
 						key={pet.id}
